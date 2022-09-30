@@ -4,6 +4,8 @@ const contentElem = document.querySelector('.content');
 
 const techBooks = await getTechBooks();
 
+console.log(techBooks);
+
 contentElem.innerHTML = `
 	<h1>Book Site</h1>
 	<h2>There are ${books.length} books:</h2>

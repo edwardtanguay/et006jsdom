@@ -14,18 +14,12 @@ export const books = [
 export const getTechBooks = () => {
 	return new Promise((resolve, reject) => {
 		setTimeout(() => {
-			const techBooks = [
-				{
-					title: 'aaa'
-				},
-				{
-					title: 'bbb'
-				},
-				{
-					title: 'ccc'
-				}
-			];
-			resolve(techBooks);
+			(async () => {
+				const response = await fetch(techBooksUrl);
+				console.log(response);
+				const techBooks = await response.json();
+				resolve(techBooks);
+			})();
 		}, 3000);
 	});
 };
