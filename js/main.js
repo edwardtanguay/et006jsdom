@@ -2,7 +2,7 @@ import { books, getTechBooks } from './model.js';
 
 const contentElem = document.querySelector('.content');
 
-const techBooks = getTechBooks();
+const techBooks = await getTechBooks();
 
 contentElem.innerHTML = `
 	<h1>Book Site</h1>

@@ -12,15 +12,20 @@ export const books = [
 ];
 
 export const getTechBooks = () => {
-	return [
-		{
-			title: "aaa"
-		},
-		{
-			title: "bbb"
-		},
-		{
-			title: "ccc"
-		}
-	]
-}
+	return new Promise((resolve, reject) => {
+		setTimeout(() => {
+			const techBooks = [
+				{
+					title: 'aaa'
+				},
+				{
+					title: 'bbb'
+				},
+				{
+					title: 'ccc'
+				}
+			];
+			resolve(techBooks);
+		}, 3000);
+	});
+};
