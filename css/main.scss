@@ -1,0 +1,18 @@
+body {
+	background-color: #333;
+	color: #ccc;
+	font-family: sans-serif;
+	padding: 0 1rem;
+
+	.books {
+		.book {
+			background-color: #222;
+			margin-bottom: 1rem;
+			padding: 1rem;
+
+			.title {
+				color: rgb(222, 222, 134);
+			}
+		}
+	}
+}

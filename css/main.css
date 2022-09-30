@@ -1,6 +1,14 @@
 body {
-	background-color: #333;
-	color: #ccc;
-	font-family: sans-serif;
-	padding: 0 1rem;
+  background-color: #333;
+  color: #ccc;
+  font-family: sans-serif;
+  padding: 0 1rem;
 }
+body .books .book {
+  background-color: #222;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+body .books .book .title {
+  color: rgb(222, 222, 134);
+}/*# sourceMappingURL=main.css.map */
