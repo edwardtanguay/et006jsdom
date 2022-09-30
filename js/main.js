@@ -1,1 +1,3 @@
-console.log('we are in js')
+const contentElem = document.querySelector('.content');
+
+console.log(contentElem)

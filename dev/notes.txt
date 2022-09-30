@@ -1,0 +1,1 @@
+- in javascript file, get elements as variables and change html dom
