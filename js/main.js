@@ -1,5 +1,8 @@
-import { books } from './model.js';
+import { books, getTechBooks } from './model.js';
+
 const contentElem = document.querySelector('.content');
+
+const techBooks = getTechBooks();
 
 contentElem.innerHTML = `
 	<h1>Book Site</h1>
@@ -12,6 +15,17 @@ contentElem.innerHTML = `
 			<div class="book">
 				<div class="title">${book.title}</div>
 				<div class="description">${book.author}</div>
+			</div>
+			`;
+			})
+			.join('')}	
+	</div>
+	<div class="techBooks">
+		${techBooks
+			.map((techBook) => {
+				return `
+			<div class="book">
+				<div class="title">${techBook.title}</div>
 			</div>
 			`;
 			})

@@ -1,1 +1,2 @@
-- in javascript file, get elements as variables and change html dom
+- x in javascript file, get elements as variables and change html dom
+- .. in main.js load techBooks from model, model gets the data via fetching a url

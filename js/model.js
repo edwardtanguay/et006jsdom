@@ -1,3 +1,5 @@
+const techBooksUrl = 'https://edwardtanguay.netlify.app/share/techBooks.json';
+
 export const books = [
 	{
 		title: 'Psychology 101',
@@ -8,3 +10,17 @@ export const books = [
 		author: 'George Orwell'
 	}
 ];
+
+export const getTechBooks = () => {
+	return [
+		{
+			title: "aaa"
+		},
+		{
+			title: "bbb"
+		},
+		{
+			title: "ccc"
+		}
+	]
+}
