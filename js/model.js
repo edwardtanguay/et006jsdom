@@ -11,15 +11,18 @@ export const books = [
 	}
 ];
 
-export const getTechBooks = () => {
+export const getTechBooks = (language = null) => {
 	return new Promise((resolve, reject) => {
 		setTimeout(() => {
 			(async () => {
 				const response = await fetch(techBooksUrl);
-				console.log(response);
 				const techBooks = await response.json();
-				resolve(techBooks);
+				if (language !== null) {
+					resolve(techBooks.filter((m) => m.language === 'french'));
+				} else {
+					resolve(techBooks);
+				}
 			})();
-		}, 3000);
+		}, 1000);
 	});
 };
